@@ -25,3 +25,14 @@ stage:
       type: broker
       broker: p-service-registry
       plan: trial
+
+prod:
+  services:
+    - name: github-rabbitmq
+      type: broker
+      broker: cloudamqp
+      plan: lemur
+    - name: github-eureka
+      type: broker
+      broker: p-service-registry
+      plan: trial
