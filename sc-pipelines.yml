@@ -22,6 +22,6 @@ stage:
       broker: cloudamqp
       plan: lemur
     - name: github-eureka
-      type: app
-      coordinates: com.example.eureka:github-eureka:0.0.1.M1
-      pathToManifest: sc-pipelines/manifest-eureka.yml
+      type: broker
+      broker: p-service-registry
+      plan: trial
